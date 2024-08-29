@@ -2,12 +2,13 @@ import logo from "./logo.svg";
 import "./App.css";
 
 //import Greeting from "./Greeting";
-import JapFood from "./components/JapFood";
+//import JapFood from "./components/JapFood";
+import SimpleCounter from "./components/SimpleCounter";
 
 function App() {
   return (
     <>
-      <JapFood />
+      <SimpleCounter initialValue="1000" />
     </>
   );
 }
