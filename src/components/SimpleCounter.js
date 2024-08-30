@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
-const SimpleCounter = ({ initialValue = 0 }) => {
-  const [number, setNumber] = useState(initialValue);
+const SimpleCounter = ({ count = 0, setCount }) => {
+  //const [number, setNumber] = useState(initialValue);
 
   const change = () => {
-    setNumber((prevNumber) => prevNumber + 10);
+    setCount(count + 10);
   };
 
   return (
-    <>
+    <div id="counter-box">
       <div
         style={{
           border: "1px solid black",
@@ -18,7 +18,7 @@ const SimpleCounter = ({ initialValue = 0 }) => {
           padding: "30px",
         }}
       >
-        {number}
+        {count}
       </div>
       <button
         style={{
@@ -28,7 +28,7 @@ const SimpleCounter = ({ initialValue = 0 }) => {
       >
         +10
       </button>
-    </>
+    </div>
   );
 };
 
