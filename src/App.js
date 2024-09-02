@@ -7,14 +7,18 @@ import "./App.css";
 //import JapFood from "./components/JapFood";
 import SimpleCounter from "./components/SimpleCounter";
 import SimpleMessage from "./components/SimpleMessage";
+import RandomUser from "./components/RandomUser";
 
 function App() {
   const [count, setCount] = useState(1000);
   return (
-    <div id="app-box" style={{ display: "flex", flexDirection: "row" }}>
-      <SimpleCounter count={count} setCount={setCount} />
-      <SimpleMessage count={count} />
-    </div>
+    <>
+      <RandomUser />
+      <div id="app-box" style={{ display: "flex", flexDirection: "row" }}>
+        <SimpleCounter count={count} setCount={setCount} />
+        <SimpleMessage count={count} />
+      </div>
+    </>
   );
 }
 
